@@ -1,0 +1,68 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:ModernDashboard.ViewModel"
+                    xmlns:view="clr-namespace:ModernDashboard.View">
+        
+    <!--Data Templates apply Views to ViewModel objects displayed in the UI-->
+    
+    <!--Startup Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:StartupViewModel}">
+        <view:StartupView/>
+    </DataTemplate>
+    
+    <!--PC Page-->
+    
+    <DataTemplate DataType="{x:Type viewmodel:PCViewModel}">
+        <view:PCView/>
+    </DataTemplate>
+    
+    <!--Home Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+        <view:HomeView/>
+    </DataTemplate>
+    
+    <!--Desktop Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:DesktopViewModel}">
+        <view:DesktopView/>
+    </DataTemplate>
+    
+    <!--Document Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:DocumentViewModel}">
+        <view:DocumentView/>
+    </DataTemplate>
+
+    <!--Download Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:DownloadViewModel}">
+        <view:DownloadView/>
+    </DataTemplate>
+    
+    <!--Picture Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:PictureViewModel}">
+        <view:PictureView/>
+    </DataTemplate>
+    
+    <!--Music Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:MusicViewModel}">
+        <view:MusicView/>
+    </DataTemplate>
+    
+    <!--Movie Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:MovieViewModel}">
+        <view:MovieView/>
+    </DataTemplate>
+
+    <!--Trash Page-->
+
+    <DataTemplate DataType="{x:Type viewmodel:TrashViewModel}">
+        <view:TrashView/>
+    </DataTemplate>
+    
+</ResourceDictionary>

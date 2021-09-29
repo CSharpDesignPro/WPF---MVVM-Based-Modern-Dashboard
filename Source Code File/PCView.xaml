@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="ModernDashboard.View.PCView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:ModernDashboard.View"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="650">
+
+    <UserControl.Style>
+        <Style>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="UserControl.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             From="0.0"
+                                             To="1.0"
+                                             Duration="0:0:0.5" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Style>
+
+    <Grid Background="#303030">
+
+        <RadioButton Height="40"
+                     Width="40"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Tag="Assets/back_icon.png"
+                     Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.BackHomeCommand}"
+                     Style="{StaticResource HomeButtonStyle}"
+                     Margin="0,10,0,0" />
+
+        <TextBlock Text="Home  >  This PC"
+                   FontSize="24"
+                   FontFamily="/Fonts/OpenSans-Regular.ttf #Open Sans Regular"
+                   Foreground="#DDDDDD"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="50,12,0,0" />
+
+
+        <ItemsControl ItemsSource="{Binding PCSourceCollection}"
+                      Height="350"
+                      Width="650"
+                      HorizontalAlignment="Center"
+                      Margin="0,40,0,0">
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <RadioButton Content="{Binding PCName}"                                
+                                 Tag="{Binding PCImage}"
+                                 Style="{StaticResource GridButtonStyle}"
+                                 GroupName="PCGroup" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="4"
+                                 Rows="3" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+        </ItemsControl>
+
+
+    </Grid>
+
+</UserControl>
