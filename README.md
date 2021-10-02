@@ -61,10 +61,6 @@ Trash Page
 ![10](https://user-images.githubusercontent.com/55704859/135317165-6ed5f086-a7fa-49bb-a817-83bef29bce1f.png)
 
 
-Icon Credits:
-
-https://icons8.com/icons
-
-https://github.com/icons8/flat-color-icons
+Icon Credits : https://icons8.com/icons
 
 
