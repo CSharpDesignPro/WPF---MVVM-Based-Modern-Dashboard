@@ -1,6 +1,6 @@
 # WPF - MVVM Based Modern Dashboard
 
-Video Tutorial : https://youtu.be/8Lv1elXm-iE
+YouTube Video Tutorial Link : https://youtu.be/8Lv1elXm-iE
 
 Startup Page
 
