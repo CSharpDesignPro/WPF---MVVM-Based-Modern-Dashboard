@@ -1,6 +1,5 @@
 # WPF - MVVM Based Modern Dashboard
 
-<b>GitHub Account</b> : https://github.com/CSharpDesignPro
 
 YouTube Video Tutorial Link : https://youtu.be/8Lv1elXm-iE
 
@@ -64,5 +63,7 @@ Trash Page
 
 
 Icon Credits : https://icons8.com/icons
+
+<b>GitHub Account</b> : https://github.com/CSharpDesignPro
 
 
